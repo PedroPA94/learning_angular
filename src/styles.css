@@ -46,3 +46,17 @@ button:hover {
   opacity: 0.8;
   font-weight: normal;
 }
+
+.copyright {
+  background-color: lightgray;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.invalid {
+  border-bottom: solid red;
+}
+
+.valid {
+  border-bottom: solid green;
+}
