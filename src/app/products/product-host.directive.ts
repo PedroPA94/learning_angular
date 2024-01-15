@@ -13,6 +13,5 @@ export class ProductHostDirective implements OnInit {
       name: 'Optical mouse',
       price: 130
     });
-    console.log('oi');
   }
 }
