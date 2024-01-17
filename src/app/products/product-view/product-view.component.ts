@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Host, Input, OnInit } from '@angular/core';
 import { ProductViewService } from './product-view.service';
 
 @Component({
@@ -11,7 +11,7 @@ export class ProductViewComponent implements OnInit {
   @Input() id = -1;
   name = '';
 
-  constructor(private productViewService: ProductViewService) {}
+  constructor(@Host() private productViewService: ProductViewService) {}
 
   ngOnInit(): void {
     const product = this.productViewService.getProduct(this.id);
