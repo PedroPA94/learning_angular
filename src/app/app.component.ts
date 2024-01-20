@@ -10,5 +10,6 @@ import { APP_CONFIG, AppConfig, appSettings } from './app.config';
 export class AppComponent {
   title = 'learning-angular';
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor(@Inject(APP_CONFIG) config: AppConfig) {}
 }
